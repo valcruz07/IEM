@@ -1,0 +1,55 @@
+#registrarse{
+    font-family:"fajala",'Times New Roman', Times, serif;
+    width: 50%;
+    min-height: 800px;
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    color: #2979CD
+
+}
+#ess2{
+    font-family:"fajala",'Times New Roman', Times, serif;
+    width: 80%;
+    min-height: 300px;
+    margin: 10px auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #080808; 
+}
+
+.bloque{
+    display: block;
+    width:90%;
+    margin:30px auto;
+    background: rgb(216, 213, 213);
+    padding: 20px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset;
+  }
+  
+  .bloque h2{
+    margin-bottom: 25px;
+    
+    width:1200%;
+  }
+
+  .bloque h3{
+    margin-bottom: 15px;
+    width:80%;
+  }
+  
+  label,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  input[type="button"],
+  input[type="submit"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }

@@ -1,0 +1,83 @@
+<!-- Para que no se marque de azul los links-->
+*{
+  margin:0px;
+  padding:0px;
+  font-family:sans-serif, Helvetica, Arial;
+  text-decoration:none;
+}
+
+.clearfix{
+    clear: both;
+    float:none;
+}
+
+
+<!-- Color de la pg
+
+
+<!--Cabecera
+#cabecera{
+    width: 150px;
+    height:auto;
+    background: transparent;
+    margin: 0px auto;
+    border:1px solid black;
+}
+
+#logo{
+    float: left;
+    width:540 px;
+    height:100px;
+}
+#logo a{
+    font-family:"fajala",Helvetica;
+    font-size:40px;
+    letter-spacing:2px;
+    color: #f5eded;
+    line-height:20px;
+    margin-left: 10px;
+}
+
+#logo a:hover{
+  cursor:pointer;
+}
+
+<!--Menu/
+#menu{
+    clear:both;
+    width:100%;
+    height: 100px;
+    margin-right: 80px;
+    background: linear-gradient(to bottom, f9f9f9 0px, #dfd7d7 100%);
+    box-shadow: 0px 1px 1px rgb(226, 216, 216);
+    overflow: hidden;
+    line-height: 80px;
+    font-weight: 900;
+     
+}
+
+#menu ul{
+    list-style:none;
+}
+
+#menu ul li{
+  float:right;
+  line-height:40px;
+  border-right:1px solid #D6D6D6;
+  
+
+}
+
+#menu ul li a{
+    display: block;
+    padding-left:30px;
+    padding-right:10px;
+    font-size:20px;
+    color:#f7f2f2;
+    margin-right: 80px;
+}
+
+#menu ul li a:hover{
+    margin-right: 80px;
+    background:linear-gradient(to bottom, #a19f9f 0px,#d1d1d1 100%);
+}
