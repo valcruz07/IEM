@@ -85,7 +85,7 @@ require_once 'iniciosesion.php';
                             S/. <?php echo number_format($product['Prec_Precio'], 2, '.', ','); ?>
                             </div>
                             <div>
-                             Stock: <?php echo $product['Tallas'] ?>
+                             Tallas: <?php echo $product['Tallas'] ?>
                             </div>
                             <?php 
                             if ($idusu != NULL && $product['Tallas'] != null){
