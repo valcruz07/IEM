@@ -10,5 +10,5 @@ if(isset($_SESSION["cart"][$_GET["id"]])){
 }
 $_SESSION["alert"] = 'Producto añadido al carrito correctamente. ';
 header('location:javascript:history.back(1)')
-
+#Hola xd
  ?>
