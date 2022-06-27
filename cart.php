@@ -7,6 +7,7 @@
         ?>
         <div class="container-fluid p-5 bg-primary text-white text-center">
         <link rel="stylesheet" type="text/css" href="estcarrito.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <header id="cabecera">
         <div id="logo">
           <a href="portada2.php?idusu=<?php echo $idusu; ?>">

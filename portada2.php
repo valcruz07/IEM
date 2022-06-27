@@ -33,7 +33,7 @@
                 <a class="nav-link" align-rigth href="cart.php?idusu=<?php echo $idusu; ?>">CARRITO DE COMPRAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" align-rigth href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?></a>
+                <a class="nav-link" align-rigth href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = strtoupper($row['CI_Nombre']); echo $name; ?></a>
             </li>
         </ul>
     </nav>
