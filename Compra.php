@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
-    <title> ElectroShop </title>
+    <title> Baby Fashion </title>
     <link rel="stylesheet" type="text/css" href="estilos.css"
   </head>
   <body style="background-color:#08E7EE;">
@@ -17,7 +17,7 @@
       <header id="cabecera">
         <div id="logo">
           <a href="portada2.php">
-            <h1> ElectroShop </h1>
+            <h1> Baby Fashion </h1>
           </a>
         </div>
         <!--/Menu -->
