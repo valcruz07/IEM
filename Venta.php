@@ -8,6 +8,7 @@ require_once 'iniciosesion.php';
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <link href="http://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
 <!DOCTYPE HTML>
 <HTML lang="es">
@@ -15,36 +16,34 @@ require_once 'iniciosesion.php';
     <meta charset="utf-8" />
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
-    <title> ES | Venta </title>
+    <title> BabyFashion | Venta </title>
     </head>
   <body>
     <header>
-    <nav id="menu">
-      <div class = "box">
-          <ul>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <ul class="nav navbar-nav">
             <?php
               if($idusu == NULL){
             ?>
             <li>
-              <a href="sesion.php"> Iniciar Sesión </a>
+              <a class="nav-link" href="sesion.php"> Iniciar Sesión </a>
             </li>
             <li>
-              <a href="index.php"> Inicio </a>
+              <a class="nav-link" href="index.php"> Inicio </a>
             </li>
             <?php
               }else{
             ?>
             <li>
-              <a href="cart.php?idusu=<?php echo $idusu; ?>"> Carrito de compras </a>
+              <a class="nav-link" href="cart.php?idusu=<?php echo $idusu; ?>"> Carrito de compras </a>
             </li>
             <li>
-              <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
+              <a class="nav-link" href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
             </li>
             <?php
             }
             ?>
           </ul>
-      </div>
     </nav>
     </header>
         <header style= "text-align: center;" class = "loguito">
@@ -52,7 +51,7 @@ require_once 'iniciosesion.php';
         </header>
     <header>
       
-        <h3 class = "subtitulo"> PRODUCTOS </h3>
+        <h3 class = "subtitulo"> PRODUCTOS EN VENTA </h3>
     </header>
       <div class ="productos">
         <div class = "text-centrado">

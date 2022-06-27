@@ -36,6 +36,12 @@
             </li>
         </ul>
     </nav>
+    </header>
+    <header style= "text-align: center;" class = "loguito">
+        <img src="imagenes/LogoVenta.png" >
+        </header>
+
+<header>
 </body>
 
         <!--/Productos -->

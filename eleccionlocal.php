@@ -12,44 +12,47 @@
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
     <title> ElectroShop </title>
-    <link rel="stylesheet" type="text/css" href="estilos.css"
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   </head>
-  <body style="background-color:#08E7EE;">
 
 <?php require_once 'eleccionlocal.php';?>
-      <!--Cabecera -->
-      <header id="cabecera">
-        <div id="logo">
-            <a href="portada2.php?idusu=<?php echo $idusu; ?>">
-            <h1> ElectroShop </h1>
-          </a>
-        </div>
+
         <!--/Menu -->
-        <br/>
-        <br/>
-        <nav id="menu">
-          <ul>
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <ul class="nav navbar-nav">
+            <?php
+              if($idusu == NULL){
+            ?>
             <li>
-              <a href="cerrar.php"> Cerrar Sesión </a>
+              <a class="nav-link" href="sesion.php"> Iniciar Sesión </a>
             </li>
             <li>
-              <a href="historial.php?idusu=<?php echo $idusu; ?>"> Historial </a>
+              <a class="nav-link" href="index.php"> Inicio </a>
+            </li>
+            <?php
+              }else{
+            ?>
+            <li>
+              <a class="nav-link" href="cart.php?idusu=<?php echo $idusu; ?>"> Carrito de compras </a>
             </li>
             <li>
-              <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
+              <a class="nav-link" href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" align-rigth href="cerrar.php">CERRAR SESION</a>
+            </li>
+            <?php
+            }
+            ?>
           </ul>
-        </nav>
+    </nav>
         <div id= "buscador" class="bloque" >
           <h3> </h3>
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+
 
 <!----------CREACION DE LA TABLA----------->
 
