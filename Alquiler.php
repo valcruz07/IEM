@@ -45,6 +45,11 @@ require_once 'iniciosesion.php';
             ?>
           </ul>
     </nav>
+    </header>
+        <header style= "text-align: center;" class = "loguito">
+        <img src="imagenes/LogoVenta.png" >
+        </header>
+    <header>
       
         <h3 class = "subtitulo"> PRODUCTOS EN ALQUILER </h3>
     </header>
@@ -79,10 +84,10 @@ require_once 'iniciosesion.php';
                             S/. <?php echo number_format($product['Prec_Precio'], 2, '.', ','); ?>
                             </div>
                             <div>
-                             Stock: <?php echo $product['stock'] ?>
+                             Tallas: <?php echo $product['Tallas'] ?>
                             </div>
                             <?php 
-                            if ($idusu != NULL && $product['stock'] != 0){
+                            if ($idusu != NULL && $product['Tallas'] != 0){
                             ?>
                             <a href = "add_to_cart.php?id= <?php echo $product['id_Producto']; ?>"
                              class = "boton-ad-car"> Añadir al carrito </a>

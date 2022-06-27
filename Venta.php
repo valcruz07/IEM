@@ -73,7 +73,7 @@ require_once 'iniciosesion.php';
             <div class = "col-xs-9 col-sm-5 col-md-4 product">
                 <div class = "card">
                   <div class = "text-centrado">
-                    <img src="imagenes/Venta <?php echo $product['id_Producto']; ?>.png" alt ="Imagen Producto <?php echo $product['id_Producto']; ?>">
+                    <img src="imagenes/Producto <?php echo $product['id_Producto']; ?>.jpeg" alt ="Imagen Producto <?php echo $product['id_Producto']; ?>">
                     <h5 > <?php echo $product['Prod_Nombre']; ?> </h5>
 
                     <div class="container mt-5">
