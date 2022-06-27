@@ -2,7 +2,7 @@
 
 <?php require_once 'sesion.php';?>
     <div id="sesion">
-      <h1> Bienvenido a Electroshop</h1>
+      <h1> Bienvenido a Baby Fashion</h1>
       <aside id="ess"
         <div id="login" class="bloque">
         <link rel="stylesheet" type="text/css" href="estsesion.css"

@@ -10,7 +10,7 @@
         <header id="cabecera">
         <div id="logo">
           <a href="portada2.php?idusu=<?php echo $idusu; ?>">
-            <h1> ElectroShop </h1>
+            <h1> Baby Fashion </h1>
           </a>
         </div>
         <!--/Menu -->

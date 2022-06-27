@@ -2,7 +2,7 @@
 
 <?php require_once 'registrarse.php';?>
     <div id="registrarse">
-      <h1> Bienvenido a Electroshop</h1>
+      <h1> Bienvenido a Baby Fashion</h1>
       <aside id="ess2"
       <div id="register" class="bloque">
       <link rel="stylesheet" type="text/css" href="estregist.css"

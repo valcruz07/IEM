@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
-    <title> ElectroShop </title>
+    <title> Baby Fashion </title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   </head>
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand navbar-dark bg-primary">
         <ul class="nav navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="">ELECTROSHOP </a>
+                <a class="nav-link" href="">BABY FASHION </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" align-rigth href="cerrar.php">CERRAR SESION</a>
@@ -47,14 +47,14 @@
             <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
-                  <th> <a href="apple.php?idusu=<?php echo $idusu; ?>"> Apple </a> </th>
-                  <th> <a href="lenovo.php?idusu=<?php echo $idusu; ?>">Lenovo </a> </th>
+                  <th> <a href="Alquiler.php?idusu=<?php echo $idusu; ?>"> Alquiler </a> </th> <th> </th> <th> </th> <th> </th> <th> </th> <th> </th> <th> </th>
+                  <th> <a href="Venta.php?idusu=<?php echo $idusu; ?>">Venta </a> </th>
                 </tr>
               </thead>
               <tbody>
               <tr align= 'center'>
-                  <td><a href="apple.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/apple.png" width="250px" height="250px"> </a> </td>
-                  <td><a href="lenovo.php?idusu=<?php echo $idusu; ?>"><img src="./imagenes/lenovo.png" width='400px' height='90px'></a> </td>
+                  <td><a href="Alquiler.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/alquiler.png" width="250px" height="250px"> </a> </td> <td>  </td> <td>  </td> <td>  </td> <td>  </td> <td>  </td> <td>  </td>
+                  <td><a href="Venta.php?idusu=<?php echo $idusu; ?>"><img src="./imagenes/venta.png" width='250px' height='250px'></a> </td>
                 </tr>
               </tbody>
             </table>
@@ -62,14 +62,13 @@
             <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
-                  <th> <a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> Xiaomi </a> </th>
-                  <th> <a href="hp.php?idusu=<?php echo $idusu; ?>"> HP </a> </th>
+                  <th> <a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> Compra </a> </th>
                 </tr>
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td><a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/xiaomi.png" width="300px" height="200px"/></a></td>
-                  <td><a href="hp.php?idusu=<?php echo $idusu; ?>"><img src="./imagenes/hp.png" width="300px" height="200px"/></a></td>
+                  <td><a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/compra.png" width="250px" height="250px"/></a></td>
+                  
                 </tr>
               </tbody>
             </table>

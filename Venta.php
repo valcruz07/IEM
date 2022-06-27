@@ -1,5 +1,5 @@
 <?php 
-require_once 'Alquiler.php';
+require_once 'Venta.php';
 include 'conexion.php';
 require_once 'iniciosesion.php';
 ?>
@@ -15,7 +15,7 @@ require_once 'iniciosesion.php';
     <meta charset="utf-8" />
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
-    <title> ES | Apple </title>
+    <title> ES | Venta </title>
     </head>
   <body>
     <header>
@@ -48,7 +48,7 @@ require_once 'iniciosesion.php';
     </nav>
     </header>
         <header style= "text-align: center;" class = "loguito">
-        <img src="imagenes/Apple-logo.jpg" >
+        <img src="imagenes/LogoVenta.png" >
         </header>
     <header>
       
@@ -63,10 +63,10 @@ require_once 'iniciosesion.php';
             JOIN prod_marca ON producto.id_Producto = prod_marca.id_Producto 
             JOIN marca ON marca.Id_Marca = prod_marca.Id_Marca 
             JOIN precio ON precio.id_Precio = producto.id_Precio
-            WHERE marca.Nombre='Apple'
-            ORDER BY stock DESC";
+            WHERE marca.Nombre='Venta_ropa'";
             $result = mysqli_query($db, $consult);
             $product = mysqli_fetch_array($result);
+            $c = 1;
 
             if ($result = mysqli_query($db, $consult)) {
                 while ($product = mysqli_fetch_array($result)) {
@@ -74,22 +74,22 @@ require_once 'iniciosesion.php';
             <div class = "col-xs-9 col-sm-5 col-md-4 product">
                 <div class = "card">
                   <div class = "text-centrado">
-                    <img src="imagenes/apple <?php echo $product['id_Producto']; ?>.jpg" alt ="Imagen Producto <?php echo $product['id_Producto']; ?>">
+                    <img src="imagenes/Venta <?php echo $product['id_Producto']; ?>.png" alt ="Imagen Producto <?php echo $product['id_Producto']; ?>">
                     <h5 > <?php echo $product['Prod_Nombre']; ?> </h5>
 
                     <div class="container mt-5">
                      <div class="row">
                         <div class="col-sm-6">
                           <div class="row">
-                           <div class="col-sm-8">Precio: </div>
+                            <div class="col-sm-8">Precio: </div>
                             <div>
                             S/. <?php echo number_format($product['Prec_Precio'], 2, '.', ','); ?>
                             </div>
                             <div>
-                             Stock: <?php echo $product['stock'] ?>
+                             Stock: <?php echo $product['Tallas'] ?>
                             </div>
                             <?php 
-                            if ($idusu != NULL && $product['stock'] != 0){
+                            if ($idusu != NULL && $product['Tallas'] != null){
                             ?>
                             <a href = "add_to_cart.php?id= <?php echo $product['id_Producto']; ?>"
                              class = "boton-ad-car"> Añadir al carrito </a>
@@ -104,6 +104,7 @@ require_once 'iniciosesion.php';
                 </div>
             </div>
             <?php
+            $c = $c + 1;
                 }
             }
             ?>
