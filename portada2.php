@@ -16,6 +16,7 @@
   </head>
 
 <?php require_once 'portada2.php';?>
+<header id="cabecera">
 <body>
     <nav class="navbar navbar-expand navbar-dark bg-primary">
         <ul class="nav navbar-nav">
@@ -36,6 +37,10 @@
             </li>
         </ul>
     </nav>
+    </header>
+    <header style= "text-align: center;" class = "loguito">
+        <img src="imagenes/LogoVenta.png" >
+        </header>
 </body>
  
 
@@ -47,8 +52,8 @@
             <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
-                  <th> <a href="Alquiler.php?idusu=<?php echo $idusu; ?>"> Alquiler </a> </th> <th> </th> <th> </th> <th> </th> <th> </th> <th> </th> <th> </th>
-                  <th> <a href="Venta.php?idusu=<?php echo $idusu; ?>">Venta </a> </th>
+                  <th> <a href="Alquiler.php?idusu=<?php echo $idusu; ?>"> Alquilar </a> </th> <th> </th> <th> </th> <th> </th> <th> </th> <th> </th> <th> </th>
+                  <th> <a href="Venta.php?idusu=<?php echo $idusu; ?>">Comprar </a> </th>
                 </tr>
               </thead>
               <tbody>
@@ -62,12 +67,12 @@
             <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
-                  <th> <a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> Compra </a> </th>
+                  <th> <a href="https://wa.me/message/FON652QO2B67M1"> Vender </a> </th>
                 </tr>
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td><a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/compra.png" width="250px" height="250px"/></a></td>
+                  <td><a href="https://wa.me/message/FON652QO2B67M1"> <img src="./imagenes/compra.png" width="250px" height="250px"/></a></td>
                   
                 </tr>
               </tbody>
