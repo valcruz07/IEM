@@ -2,7 +2,7 @@
 
 <?php require_once 'seadmi.php';?>
     <div id="sesion">
-      <h1> Bienvenido a Electroshop</h1>
+      <h1> Bienvenido a Baby Fashion</h1>
       <aside id="ess"
         <div id="electroshop" class="bloque">
         <link rel="stylesheet" type="text/css" href="estsesion.css"
